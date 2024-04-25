@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:wght@500&family=Roboto+Serif:ital,opsz,wght@1,8..144,300&family=Roboto+Slab&family=Ubuntu&display=swap');
+
+main {
+    height: 100vh;
+    width: 100vw;
+}
+
+p{
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+#cursor{
+    height: 1.3rem;
+    width: 1.3rem;
+    background-color: rgb(76, 73, 73);
+    position: fixed;
+    z-index: 99;
+    border-radius: 50%;
+    transition: all linear 0.1s;
+}
+
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100vw;
+    height: 85vh;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page{
+    height: 100vh;
+    width: 100vw;
+    padding: 0vw 5vw;
+    position: absolute;
+}
+.nav{
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #202020;
+    position: sticky;
+    padding: 0rem 2rem;
+}
+.swiper{
+    position: absolute;
+}
+.nav img {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    margin-left: 2rem;
+}
+span #icon{
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 10px;
+}
+span .btn{
+    width: 8vw;
+    border-radius: 10px;
+    background-color: #523c20;
+    color: white;
+    border: none;
+}
+.center{
+    width: 100%;
+    display: flex;
+}
+.content{
+    width: 38%;
+    text-align: left;
+    font-style: normal;
+    font-family: 'Roboto Serif', serif;
+    padding: 35px 10px;
+}
+.image{
+    width: 60%;
+    padding-left: 7rem;
+}
+
+h1, h4{
+    font-weight: 600;
+    font-size: 3rem;
+    padding: 40px 0px;
+    font-family: 'Roboto Serif', serif;
+}
+h3{
+    font-family: 'Roboto Serif', serif;
+}
+.swiper-slide{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+}
+#cspan{
+    border: 3px solid #523c20;
+    padding: .2rem;
+    width: 40rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+#cspan input{
+    background: transparent;
+    border: none;
+    width: 100%;
+}
+
+.hclass{
+    display: none;
+    background: white;
+    width: 20%;
+    color: #000;
+    right: 10rem;
+    border-radius: 10px;
+    position: absolute;
+}
+.inner:hover .hclass{
+    display: block;
+}
