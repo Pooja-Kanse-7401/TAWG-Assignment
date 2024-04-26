@@ -1,11 +1,10 @@
+var cursor = document.querySelector("#cursor")
 
+document.addEventListener("mousemove",function(dets){
+    cursor.style.left = dets.x - 18 + "px"
+    cursor.style.top = dets.y - 18 + "px"
+})
 
-// var cursor = document.querySelector("#cursor");
-
-// document.addEventListener("mousemove", function (dets) {
-//     cursor.style.left = dets.x - 7 + "px"
-//     cursor.style.top = dets.y - 7 + "px"
-// })
 
 var swiper = new Swiper(".mySwiper", {
     direction: "horizontal",
@@ -67,3 +66,32 @@ var swiper2 = new Swiper(".mySwiper2", {
         }
     }
 });
+
+function toggleMenu(){
+    // document.querySelector("#navigation").style.visibility = "visible";
+    // console.log("Hello")
+    
+    const btn = document.querySelector('#icon');
+    
+    btn.addEventListener('click', (event) => {
+        
+        const nav = document.querySelector('#navigation');
+        if(nav.classList.contains('visibleMenu')){
+            console.log('class present')
+        }
+        else{
+            
+            nav.classList.add('visibleMenu')
+        }
+        
+    })
+}
+
+function closeMenu(){
+    
+    const nav = document.querySelector('#navigation');
+    nav.classList.remove('visibleMenu')
+}
+
+
+

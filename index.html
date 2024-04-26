@@ -19,14 +19,36 @@
     <div id="cursor"></div>
 
     <div id="main">
+        <div id="navigation" class="text-light">
+            <span><img style="height: 7vw; width: 7vw; border-radius: 50%; top: 1rem; left: 2rem; position: absolute;" src="/Photos/logo.jpg" alt=""></span>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Journey</a></li>
+                <li><a href="">Vision & Mission</a></li>
+                <li><a href="">Exemplary Craftsmanship</a></li>
+                <li><a href="">Benifits</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Comming Soon</a></li>
+                <li><a href="">Get in touch</a></li>
+            </ul>
+            <span onclick="closeMenu()"><ion-icon name="close-outline" style="top: 1rem; right: 2rem; position: absolute; font-size: 3rem;"></ion-icon></span>
+            <span style="bottom: 1rem; right: 2rem; position: absolute;">
+                <ion-icon name="logo-instagram" class="p-2"></ion-icon>
+                <ion-icon name="logo-facebook" class="p-2"></ion-icon>
+                <ion-icon name="logo-youtube" class="p-2"></ion-icon>
+                <ion-icon name="logo-linkedin" class="p-2"></ion-icon>
+                <ion-icon name="logo-twitter" class="p-2"></ion-icon>
+            </span>
+        </div>
         <div class="nav">
             <img src="/Photos/logo.jpg" alt="">
             <span class="d-flex justify-content-center align-items-center">
                 <button class="btn btn-light m-3">Portfolio</button>
                 <button class="btn btn-light m-3">Shop</button>
-                <ion-icon name="apps-outline" id="icon"></ion-icon>
+                <ion-icon name="apps-outline" id="icon" onclick="toggleMenu()"></ion-icon>
             </span>
         </div>
+
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -375,43 +397,43 @@
                     <div class="page">
                         <div class="center">
                             <div class="content text-light mt-5"
-                            style="text-align: left; flex-direction: column; align-items: flex-start; justify-content: center;">
-                            <h1>Connect with Us</h1>
-                            <h3>Questions or need assistance?</h3>
-                            <p style="margin: 10px 0px;">Get in touch today to connect with one of our dedicated
-                                representatives and experience the ARK- Home difference for yourself.</p>
-                            <span class="d-flex">
-                                <ion-icon name="call-outline"></ion-icon>
-                                <span style="margin-left: 20px;">
-                                    <h5>Call Us</h5>
-                                    <h5>+91-99999999</h5>
+                                style="text-align: left; flex-direction: column; align-items: flex-start; justify-content: center;">
+                                <h1>Connect with Us</h1>
+                                <h3>Questions or need assistance?</h3>
+                                <p style="margin: 10px 0px;">Get in touch today to connect with one of our dedicated
+                                    representatives and experience the ARK- Home difference for yourself.</p>
+                                <span class="d-flex">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                    <span style="margin-left: 20px;">
+                                        <h5>Call Us</h5>
+                                        <h5>+91-99999999</h5>
+                                    </span>
                                 </span>
-                            </span>
-                            <span class="d-flex">
-                                <ion-icon name="mail-outline"></ion-icon>
-                                <span style="margin-left: 20px;">
-                                    <h5>Write Us</h5>
-                                    <h5>connect@ark.com</h5>
+                                <span class="d-flex">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                    <span style="margin-left: 20px;">
+                                        <h5>Write Us</h5>
+                                        <h5>connect@ark.com</h5>
+                                    </span>
                                 </span>
-                            </span>
-                            <span class="d-flex">
-                                <ion-icon name="location-outline"></ion-icon>
-                                <span style="margin-left: 20px;">
-                                    <h5>Visit Us At</h5>
+                                <span class="d-flex">
+                                    <ion-icon name="location-outline"></ion-icon>
+                                    <span style="margin-left: 20px;">
+                                        <h5>Visit Us At</h5>
+                                    </span>
                                 </span>
-                            </span>
-                            <p>address</p>
-                        </div>
-                        <div class="image text-light d-flex flex-column justify-content-between align-items-end">
-                            <img style="margin-top: 20rem; border-radius: 50%;" src="/Photos/logo.jpg" alt="">
-                            <span>
-                                <ion-icon name="logo-instagram" class="p-2"></ion-icon>
-                                <ion-icon name="logo-facebook" class="p-2"></ion-icon>
-                                <ion-icon name="logo-youtube" class="p-2"></ion-icon>
-                                <ion-icon name="logo-linkedin" class="p-2"></ion-icon>
-                                <ion-icon name="logo-twitter" class="p-2"></ion-icon>
-                            </span>
-                        </div>
+                                <p>address</p>
+                            </div>
+                            <div class="image text-light d-flex flex-column justify-content-between align-items-end">
+                                <img style="margin-top: 20rem; border-radius: 50%;" src="/Photos/logo.jpg" alt="">
+                                <span>
+                                    <ion-icon name="logo-instagram" class="p-2"></ion-icon>
+                                    <ion-icon name="logo-facebook" class="p-2"></ion-icon>
+                                    <ion-icon name="logo-youtube" class="p-2"></ion-icon>
+                                    <ion-icon name="logo-linkedin" class="p-2"></ion-icon>
+                                    <ion-icon name="logo-twitter" class="p-2"></ion-icon>
+                                </span>
+                            </div>
                         </div>
                     </div>
 
@@ -421,19 +443,19 @@
         </div>
     </div>
 
-        <!-- Bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
-        <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
-        <!-- Swiper -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <!-- script -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- script -->
 
-        <script src="/script.js">
-        </script>
+    <script src="/script.js">
+    </script>
 
 
 </body>

@@ -5,6 +5,35 @@ main {
     width: 100vw;
 }
 
+#navigation{
+    /* display: block !important; */
+    /* display: none !important; */
+    position: absolute;
+    z-index: 11111;
+    background-color: #523c20;
+    height: 100vh;
+    width: 100vw;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    /* bottom: 0; */
+}
+.visibleMenu{
+
+    visibility: visible !important;
+}
+
+#navigation ul li{
+    list-style-type: decimal-leading-zero;
+    font-size: 2rem;
+}
+#navigation ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: sans-serif;
+}
 p{
     font-family: sans-serif;
     font-size: 1rem;
@@ -82,6 +111,10 @@ span .btn{
     color: white;
     border: none;
 }
+/* span .btn:hover #cursor{
+    height: 2rem;
+    width: 2rem;
+} */
 .center{
     width: 100%;
     display: flex;
@@ -141,4 +174,7 @@ h3{
 }
 .inner:hover .hclass{
     display: block;
+}
+@media(max-width: 600px){
+    
 }
